@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { NewappointmentComponent } from './clinic/newappointment/newappointment.component';
 import { HistoryappointmentComponent } from './clinic/historyappointment/historyappointment.component';
 import { ChoosedoctorComponent } from './clinic/choosedoctor/choosedoctor.component';
-import { OrganizComponent } from './clinic/organiz/organiz.component';
+import { BranchComponent } from './clinic/branch/branch.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HospitalComponent } from './clinic/hospital/hospital.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ import { FooterComponent } from './shared/footer/footer.component';
     NewappointmentComponent,
     HistoryappointmentComponent,
     ChoosedoctorComponent,
-    OrganizComponent,
+    BranchComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HospitalComponent
   ],
   imports: [
     BrowserModule,

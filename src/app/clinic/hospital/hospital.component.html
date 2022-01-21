@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="row flex-row " >
+    <div class="col-lg-4">
+      <div class="auth-content d-flex ">
+        <div *ngFor="let hos of dbService.hospital" class="card mb-3" style="max-width: 540px;">
+          <a [routerLink]="[hos.objMhospital.hospitalCode , 'branch']" (onClickOrg)="hos.objMhospital.hospitalCode">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h1  class="card-text" id="{{hos.objMhospital.hospitalCode}}">{{hos.objMhospital.hospitalName}} </h1>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
