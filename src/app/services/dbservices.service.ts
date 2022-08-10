@@ -28,7 +28,7 @@ export class DbservicesService {
 
   // Method สำหรับการเช็ค Login
   getDoctorList() {
-    this.http.get(this.constant.baseAPIURL+ 'Staff')
+    this.http.get(`${this.constant.baseAPIURL+ 'Staff'}/demopair01`)
     .toPromise()
     .then(res =>this.list = res as StaffModel[]);
   }
@@ -44,8 +44,8 @@ export class DbservicesService {
       'hospitalCode': code
     };
 
-    this.http.get(`${this.constant.demoAPIURL+ 'Org'}/${code}`, { params: myparams })
+    this.http.get(`${this.constant.demoAPIURL+ 'Organization'}/${code}`, { params: myparams })
     .toPromise()
-    .then(res =>this.branch = res as BranchModel[]);;
+    .then(res =>this.branch = res as BranchModel[]);
   }
 }
